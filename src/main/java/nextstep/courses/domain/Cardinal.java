@@ -1,7 +1,7 @@
 package nextstep.courses.domain;
 
 public class Cardinal {
-    private Long id;
+    private final Long id;
     private final Session session;
     private Students students;
 
