@@ -1,15 +1,15 @@
 package nextstep.courses.domain;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashSet;
+import java.util.Set;
 
 public class Students {
     private final int maxStudents;
-    private final List<Student> students;
+    private final Set<Student> students;
 
     public Students(int maxStudents) {
         this.maxStudents = maxStudents;
-        this.students  = new ArrayList<>();
+        this.students  = new HashSet<>();
     }
 
     public void addStudent(Student student) throws CannotEnrollException {

@@ -5,12 +5,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Course {
-    private Long id;
+    private final Long id;
     private String title;
     private Long creatorId;
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
-    private List<Cardinal> cardinals;
+    private List<Cardinal> cardinals = new ArrayList<>();
 
     public Course(Long id, String title, Long creatorId, LocalDateTime createdAt, LocalDateTime updatedAt) {
         this.id = id;
@@ -18,11 +18,11 @@ public class Course {
         this.creatorId = creatorId;
         this.createdAt = createdAt;
         this.updatedAt = updatedAt;
-        this.cardinals = new ArrayList<>();
     }
 
-    public void addCardinal(Session session) {
-        cardinals.add(new Cardinal((long) (cardinals.size() + 1), session, new Students(10)));
+    public void addCardinal(Cardinal cardinal) {
+        cardinal.setCourseId(id);
+        cardinals.add(cardinal);
     }
 
     public int cardinalCount() {
@@ -38,6 +38,10 @@ public class Course {
 
     public LocalDateTime getCreatedAt() {
         return createdAt;
+    }
+
+    public List<Cardinal> getCardinals() {
+        return cardinals;
     }
 
     @Override
