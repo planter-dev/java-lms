@@ -1,7 +1,7 @@
 package nextstep.courses.infrastructure;
 
 import nextstep.courses.domain.Cardinal;
-import nextstep.courses.domain.CardinalRepository;
+import nextstep.courses.repository.CardinalRepository;
 import org.springframework.jdbc.core.JdbcOperations;
 import org.springframework.stereotype.Repository;
 

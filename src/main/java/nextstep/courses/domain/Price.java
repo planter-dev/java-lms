@@ -1,5 +1,7 @@
 package nextstep.courses.domain;
 
+import nextstep.courses.exception.PriceException;
+
 public class Price {
 
     private final Free free;

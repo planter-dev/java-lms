@@ -1,4 +1,4 @@
-package nextstep.courses.domain;
+package nextstep.courses.exception;
 
 public class PriceException extends Exception {
 

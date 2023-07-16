@@ -1,5 +1,7 @@
 package nextstep.courses.domain;
 
+import nextstep.courses.exception.CannotEnrollException;
+
 import java.util.HashSet;
 import java.util.Set;
 

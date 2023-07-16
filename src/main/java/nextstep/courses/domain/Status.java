@@ -1,5 +1,7 @@
 package nextstep.courses.domain;
 
+import nextstep.courses.exception.CannotEnrollException;
+
 public enum Status {
     WAITING("준비중"),
     RECRUITING("모집중"),

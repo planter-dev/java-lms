@@ -1,5 +1,7 @@
 package nextstep.courses.domain;
 
+import nextstep.courses.exception.CannotEnrollException;
+
 public class Cardinal {
     private final Long id;
     private Long courseId;

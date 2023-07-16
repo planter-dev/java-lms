@@ -1,9 +1,9 @@
 package nextstep.courses.infrastructure;
 
 import nextstep.courses.domain.Cardinal;
-import nextstep.courses.domain.CardinalRepository;
+import nextstep.courses.repository.CardinalRepository;
 import nextstep.courses.domain.Course;
-import nextstep.courses.domain.CourseRepository;
+import nextstep.courses.repository.CourseRepository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
