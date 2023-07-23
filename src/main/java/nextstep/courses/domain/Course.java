@@ -1,8 +1,6 @@
 package nextstep.courses.domain;
 
 import java.time.LocalDateTime;
-import java.util.ArrayList;
-import java.util.List;
 
 public class Course {
     private final Long id;
@@ -10,7 +8,6 @@ public class Course {
     private Long creatorId;
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
-    private List<Cardinal> cardinals = new ArrayList<>();
 
     public Course(Long id, String title, Long creatorId, LocalDateTime createdAt, LocalDateTime updatedAt) {
         this.id = id;
@@ -22,12 +19,8 @@ public class Course {
 
     public void addCardinal(Cardinal cardinal) {
         cardinal.setCourseId(id);
-        cardinals.add(cardinal);
     }
 
-    public int cardinalCount() {
-        return cardinals.size();
-    }
     public String getTitle() {
         return title;
     }
@@ -40,9 +33,6 @@ public class Course {
         return createdAt;
     }
 
-    public List<Cardinal> getCardinals() {
-        return cardinals;
-    }
 
     @Override
     public String toString() {

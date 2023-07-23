@@ -18,9 +18,9 @@ public class Answer {
 
     private boolean deleted = false;
 
-    private LocalDateTime createdDate = LocalDateTime.now();
+    private LocalDateTime createdAt = LocalDateTime.now();
 
-    private LocalDateTime updatedDate;
+    private LocalDateTime updatedAt;
 
     public Answer() {
     }
